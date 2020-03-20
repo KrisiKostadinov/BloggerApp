@@ -1,0 +1,22 @@
+﻿@model List<BloggerApp.Web.ViewModels.Posts.PostViewModel>
+@{
+    ViewData["Title"] = "All posts";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@foreach (var post in Model)
+{
+    <div class="card w-50">
+        <div class="card-header">
+            <h2 class="card-title">@post.Title</h2>
+        </div>
+        <div class="card-body">
+            <p class="card-text">@post.Content</p>
+        </div>
+        <div class="card-footer">
+            <i class="far fa-calendar-alt"></i>
+            @post.CreatedOn.ToString("dd, MMMM, yyyy, dddd")
+        </div>
+    </div>
+}

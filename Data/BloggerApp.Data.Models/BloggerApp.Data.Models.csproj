@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Services\BloggerApp.Services.Mapping\BloggerApp.Services.Mapping.csproj" />
     <ProjectReference Include="..\BloggerApp.Data.Common\BloggerApp.Data.Common.csproj" />
   </ItemGroup>
   
